@@ -1,0 +1,16 @@
+server:
+ port: 8980
+spring:
+ application:
+  name: demo-server
+
+eureka:
+ client:
+  fetch-registry: false
+  register-with-eureka: false
+#  serviceUrl:
+#   defaultZone: http://localhost:7901/eureka/
+
+management:
+ security:
+  enabled: false
