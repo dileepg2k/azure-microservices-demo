@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.azure.demo</groupId>
-	<artifactId>azure-microservices-demo</artifactId>
+	<groupId>com.cloud.demo</groupId>
+	<artifactId>cloud-microservices-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>azure-microservices-demo</name>
-	<description>Azure Microservices demo</description>
+	<name>cloud-microservices-demo</name>
+	<description>Cloud Microservices demo</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -62,7 +62,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.azure.demo.DemoApplication</mainClass>
+                    <mainClass>com.cloud.demo.DemoApplication</mainClass>
 					<buildArgs>
                 		<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
             		</buildArgs>
