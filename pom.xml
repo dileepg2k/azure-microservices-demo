@@ -63,6 +63,9 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>com.azure.demo.DemoApplication</mainClass>
+					<buildArgs>
+                		<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+            		</buildArgs>
                 </configuration>
 			</plugin>
            <!--plugin>
