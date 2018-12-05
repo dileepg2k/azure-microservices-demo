@@ -72,7 +72,8 @@
                 <configuration>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
 			<buildArgs>
-                		<JAR_FILE>${project.basedir}/target/${project.build.finalName}.jar</JAR_FILE>
+                		<JAR_FILE_NAME>${project.build.finalName}.jar</JAR_FILE_NAME>
+				<JAR_FILE_PATH>${project.basedir}/target/</JAR_FILE_PATH>
             		</buildArgs>			
                 </configuration>
                     <executions>
