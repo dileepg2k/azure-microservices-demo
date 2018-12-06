@@ -74,7 +74,12 @@
 			<buildArgs>
                 		<JAR_FILE_NAME>${project.build.finalName}.jar</JAR_FILE_NAME>
 				<JAR_FILE_PATH>${project.basedir}/target/</JAR_FILE_PATH>
-            		</buildArgs>			
+            		</buildArgs>
+			<pushRegistry>${docker.push.registry}</pushRegistry>
+   			<authConfig>
+      			    <username>${docker.user}</username>
+      			    <password>${docker.pass}</password>
+                        </authConfig>
                 </configuration>
                     <executions>
                         <execution>
