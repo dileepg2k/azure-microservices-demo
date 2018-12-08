@@ -74,17 +74,17 @@
                 <configuration>
 					<!-- commenting out as Azure cloud free account don't have privillege for
 					maven settings -->
-					<!--serverId>docker.io</serverId-->
+					<serverId>docker.io</serverId>
       				<registryUrl>${docker.repo.base.url}</registryUrl>
-	                <repository>${docker.repo.base.url}/${docker.image.prefix}/${project.artifactId}</repository>
+	                <repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<tag>latest</tag>
 					<pushRegistry>${docker.push.registry}</pushRegistry>
 					<!-- Using below configuration as Azure cloud free account don't have privillege for
 					maven settings -->
-					   <authConfig>
+					   <!--authConfig>
       						<username>gdkdemo</username>
       						<password>Demo@123</password>
-   						</authConfig>
+   						</authConfig-->
 					<!--buildArgs>
             			<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
           			</buildArgs-->
