@@ -23,8 +23,9 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Finchley.M9</spring-cloud.version>
-        <docker.image.prefix>dileepg2k</docker.image.prefix>
+        <docker.image.prefix>gdkdemo</docker.image.prefix>
 		<docker.push.registry>registry.hub.docker.com</docker.push.registry>
+		<docker.repo.base.url>https://registry.hub.docker.com</docker.repo.base.url>
 	</properties>
 
 	<dependencies>
@@ -71,15 +72,23 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.3.6</version>
                 <configuration>
-					<serverId>docker.io</serverId>
-      				<registryUrl>https://registry.hub.docker.com</registryUrl>
-	                <repository>${docker.image.prefix}/${project.artifactId}</repository>
+					<!-- commenting out as Azure cloud free account don't have privillege for
+					maven settings -->
+					<!--serverId>docker.io</serverId-->
+      				<registryUrl>${docker.repo.base.url}</registryUrl>
+	                <repository>${docker.repo.base.url}/${docker.image.prefix}/${project.artifactId}</repository>
 					<tag>latest</tag>
 					<pushRegistry>${docker.push.registry}</pushRegistry>
+					<!-- Using below configuration as Azure cloud free account don't have privillege for
+					maven settings -->
+					   <authConfig>
+      						<username>gdkdemo</username>
+      						<password>Demo@123</password>
+   						</authConfig>
 					<!--buildArgs>
             			<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
           			</buildArgs-->
-					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
+					<useMavenSettingsForAuth>false</useMavenSettingsForAuth>
                 </configuration>
                     <executions>
                         <execution>
