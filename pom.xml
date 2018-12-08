@@ -88,6 +88,8 @@
 					<!--buildArgs>
             			<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
           			</buildArgs-->
+					  <!-- setting to false as Azure cloud free account don't have privillege for
+					maven settings -->
 					<useMavenSettingsForAuth>false</useMavenSettingsForAuth>
                 </configuration>
                     <executions>
