@@ -1,8 +1,35 @@
 # Demo Microservice for cloud deployments.
 
-./ArmTemplates folder is for Azure Resource Manager templates for Azure deployments.
+DevOps
+    Software development methodology that combines development with IT operations. The goal is to shorten the System development lifecycle.
 
-Docker Hub server configuration can be done in settings.xml with server\id as docker.io. Username,password will be picked from this conifuration. As alternate authConfig\username , authConfig\password directly in pom.xml.
+CI/CD - Continous Integration/Continous Delivery
+    Pillars of successful DevOps.
 
-Tips:
- https://maven.apache.org/guides/mini/guide-encryption.html
+Microservices
+    A variant of SOA architecture style that structures application as collection of loosely coupled services.
+
+#Azure
+ARM
+    Azure Resource Manager is the service used to provision resources in your Azure subscription.
+    Azure Portal(portal.azure.com) was announced in 2014 , provides new set of API's that are used 
+    to provision resources.
+
+ARM Templates
+    ARM allows to provision your application using declarative template.
+
+Resource Group
+    A approach to group a collection of assets in logical groups for easy or automating provisioning,
+    monitoring,access control. Helps in effective management of their cost.
+
+App Services
+    Helps create powerful cloud apps.
+
+Resource Explorer
+    A tool to explore Azure API.
+
+Azure DevOps(dev.azure.com)   
+Demo with a simple Microservice App.
+
+#AWS
+TBD
