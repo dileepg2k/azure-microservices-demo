@@ -30,6 +30,7 @@ public class RequestInfoRestController {
         Enumeration<String> headerNames = request.getHeaderNames();
         String requestId = UUID.randomUUID().toString();
         //LOGGER.debug(String.format("/api/request/info :: requestId -> {%s} ", requestId));
+        LOGGER.debug("Preparing entries");
         requestInfoMap.put("RequestId", requestId);
         while (headerNames.hasMoreElements()) {
             String headerName = headerNames.nextElement();
