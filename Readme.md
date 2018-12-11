@@ -8,7 +8,10 @@ CI/CD : Continous Integration/Continous Delivery. Pillars of successful DevOps.
 Microservices :
     A variant of SOA architecture style that structures application as collection of loosely coupled services.
 
+
 ####################### Azure #######################
+
+
 ARM:
     Azure Resource Manager is the service used to provision resources in your Azure subscription.
     Azure Portal(portal.azure.com) was announced in 2014 , provides new set of API's that are used 
@@ -25,10 +28,14 @@ App Services:
     Helps create powerful cloud apps.
 
 Resource Explorer:
-    A tool to explore Azure API.
+    A tool to explore Azure API's.
 
 Azure DevOps(dev.azure.com):   
 Demo with a simple Microservice App.
 
+
+
 ####################### AWS #######################
+
+
 TBD
